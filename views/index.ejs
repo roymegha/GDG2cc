@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+   <link rel="stylesheet" type=text/css href="/stylesheets/main.css"/>
+   <style type=text/css>
+   #map {height:400px;}
+   </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Astronauts on International Space station(ISS) </h2>
+            <%detail["people"].forEach((data)=>{%>
+                <p class="a"><i class="glyphicon glyphicon-globe"></i><%=data.name%></p>
+            <%})%>
+        
+                
+            <h2>Real Time Position Of ISS</h2>
+            <p>(Click the marker to view latitude and longitude coordinates)</p>
+            <div id="map"></div>
+        </div>
+    </div>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
+
