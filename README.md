@@ -8,7 +8,8 @@ packages used:
     "leaflet": "^1.4.0",
     "node-fetch": "^2.3.0",
     
-#Map API:Leaflet(https://leafletjs.com/index.html)    
+#Map API:Leaflet(https://leafletjs.com/index.html) 
+![alt text](https://github.com/roymegha/GDG2cc/blob/master/images/Capture.PNG)
     
     
     
